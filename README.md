@@ -1,1 +1,368 @@
-# Grupo-Brito
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grupo Brito</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd166;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 0.4rem;
+    }
+    /* Página Inicial */
+    .home-welcome {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .areas-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      list-style: none;
+      font-weight: 600;
+    }
+    .areas-list li {
+      background: #e1f0ff;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      color: #004080;
+      box-shadow: 0 2px 5px rgb(0 64 128 / 0.1);
+    }
+    .btn-group {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.75rem 1.6rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #002a55;
+    }
+    /* Sobre Nós */
+    .values-list {
+      list-style: disc inside;
+      margin-top: 0.5rem;
+    }
+    /* Subsidiárias */
+    .subsidiaries-list {
+      columns: 2;
+      gap: 2rem;
+      list-style: none;
+    }
+    .subsidiaries-list li {
+      margin-bottom: 0.8rem;
+    }
+    /* Áreas de Atuação */
+    .area-item {
+      margin-bottom: 1.2rem;
+    }
+    .area-item strong {
+      color: #0073e6;
+    }
+    /* Carreiras */
+    form {
+      max-width: 400px;
+      background: #e9f2ff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 64 128 / 0.15);
+    }
+    label {
+      display: block;
+      margin: 0.7rem 0 0.3rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    button[type="submit"] {
+      margin-top: 1rem;
+      width: 100%;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background-color: #002a55;
+    }
+    /* Contato */
+    .contact-info {
+      margin-top: 1rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    footer {
+      background: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+    }
+    /* Responsivo */
+    @media (max-width: 700px) {
+      .subsidiaries-list {
+        columns: 1;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .areas-list {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grupo Brito</h1>
+    <p>Inovação e Excelência que Transformam o Brasil</p>
+  </header>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#subsidiarias">Subsidiárias</a>
+    <a href="#areas">Áreas de Atuação</a>
+    <a href="#carreiras">Carreiras</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <!-- Página Inicial -->
+    <section id="home">
+      <h2>Bem-vindo ao Grupo Brito</h2>
+      <p class="home-welcome">
+        Somos um conglomerado brasileiro presente em diversas regiões e setores do país. Atuamos com inovação, excelência e compromisso social para gerar valor sustentável e transformar desafios em oportunidades.
+      </p>
+      <h3>Nossas Áreas de Atuação</h3>
+      <ul class="areas-list">
+        <li>Tecnologia</li>
+        <li>Energia</li>
+        <li>Construção</li>
+        <li>Saúde</li>
+        <li>Agricultura</li>
+        <li>Moda</li>
+        <li>Educação</li>
+        <li>Logística</li>
+        <li>Imobiliária</li>
+      </ul>
+      <div class="btn-group">
+        <a href="#subsidiarias" class="btn">Conheça nossas subsidiárias</a>
+        <a href="#carreiras" class="btn">Junte-se a nós</a>
+      </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        Fundado com a visão de promover desenvolvimento e inovação, o Grupo Brito cresceu e se diversificou, tornando-se referência em múltiplos setores no Brasil. Com sede em São Paulo, mantemos um compromisso firme com a ética, a excelência e a responsabilidade social.
+      </p>
+      <h3>Missão</h3>
+      <p>Liderar com excelência e inovação, promovendo soluções que impactam positivamente nossos clientes, colaboradores e comunidades.</p>
+      <h3>Visão</h3>
+      <p>Ser o principal grupo empresarial brasileiro, reconhecido por sua diversidade, sustentabilidade e contribuição ao desenvolvimento nacional.</p>
+      <h3>Valores</h3>
+      <ul class="values-list">
+        <li>Ética e Transparência</li>
+        <li>Inovação constante</li>
+        <li>Sustentabilidade ambiental e social</li>
+        <li>Compromisso com a qualidade</li>
+        <li>Valorização das pessoas</li>
+      </ul>
+      <h3>Nosso time de liderança</h3>
+      <p>(Fotos e nomes dos principais executivos aqui)</p>
+    </section>
+
+    <!-- Subsidiárias -->
+    <section id="subsidiarias">
+      <h2>Subsidiárias</h2>
+      <p>Explore nosso mapa interativo e conheça as subsidiárias do Grupo Brito em todo o Brasil.</p>
+      <ul class="subsidiaries-list">
+        <li><strong>São Paulo</strong> – BritoTech São Paulo (Tecnologia), BritoLog Sudeste (Logística), BritoFoods SP (Alimentos), BritoCorp Finanças (Serviços financeiros)</li>
+        <li><strong>Rio de Janeiro</strong> – BritoMedia Rio (Mídia e Entretenimento), BritoOil RJ (Energia e Petróleo), BritoModa Leblon (Moda e Luxo)</li>
+        <li><strong>Minas Gerais</strong> – BritoAgro Minas (Agroindústria), BritoMinas Imóveis (Imobiliária), BritoTrans MG (Transporte)</li>
+        <li><strong>Espírito Santo</strong> – BritoMar ES (Exportação portuária), BritoSaúde Vitória (Saúde)</li>
+        <li><strong>Paraná</strong> – BritoVerde Paraná (Meio Ambiente), BritoGás Sul (Energia limpa)</li>
+        <li><strong>Santa Catarina</strong> – BritoIndústria SC (Indústria), BritoDigital Joinville (TI)</li>
+        <li><strong>Rio Grande do Sul</strong> – BritoFinance RS (Finanças), BritoModa Sul (Moda), BritoEduca RS (Educação)</li>
+        <li><strong>Distrito Federal</strong> – BritoFederal (Serviços públicos), BritoDefende (Segurança)</li>
+        <li><strong>Goiás</strong> – BritoSaúde Centro-Oeste (Saúde)</li>
+        <li><strong>Mato Grosso</strong> – BritoAgro MT (Agro)</li>
+        <li><strong>Mato Grosso do Sul</strong> – BritoConstrói Pantanal (Construção)</li>
+        <li><strong>Bahia</strong> – BritoCultura BA (Turismo), BritoConstruções BA (Construção)</li>
+        <li><strong>Pernambuco</strong> – BritoTech Nordeste (TI), BritoFoods Recife (Alimentos)</li>
+        <li><strong>Ceará</strong> – BritoModa CE (Moda), BritoImóveis Fortaleza (Imobiliária)</li>
+        <li><strong>Rio Grande do Norte</strong> – BritoTur RN (Turismo)</li>
+        <li><strong>Amazonas</strong> – BritoIndústria Amazônia (Indústria), BritoBio Amazônia (Biotecnologia)</li>
+        <li><strong>Pará</strong> – BritoPorto PA (Logística), BritoVerde Norte (Meio Ambiente)</li>
+        <li><strong>Tocantins</strong> – BritoAgro TO (Agro), BritoSolar TO (Energia)</li>
+      </ul>
+      <p>Cada subsidiária oferece soluções especializadas, sempre alinhadas aos valores do Grupo Brito.</p>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="areas">
+      <h2>Áreas de Atuação</h2>
+      <div class="area-item">
+        <strong>Tecnologia:</strong> Soluções inovadoras para impulsionar a transformação digital.
+      </div>
+      <div class="area-item">
+        <strong>Energia:</strong> Investimentos em fontes renováveis e tradicionais, garantindo sustentabilidade.
+      </div>
+      <div class="area-item">
+        <strong>Construção:</strong> Projetos seguros e inovadores de infraestrutura e edificações.
+      </div>
+      <div class="area-item">
+        <strong>Saúde:</strong> Clínicas e hospitais com atendimento humanizado e qualidade.
+      </div>
+      <div class="area-item">
+        <strong>Agricultura:</strong> Produção e exportação com tecnologia para produtividade e sustentabilidade.
+      </div>
+      <div class="area-item">
+        <strong>Moda:</strong> Indústrias e marcas que valorizam criatividade e design brasileiro.
+      </div>
+      <div class="area-item">
+        <strong>Educação:</strong> Formação de profissionais capacitados para o futuro.
+      </div>
+      <div class="area-item">
+        <strong>Logística:</strong> Transporte, armazenagem e distribuição integrados e eficientes.
+      </div>
+    </section>
+
+    <!-- Carreiras -->
+    <section id="carreiras">
+      <h2>Carreiras</h2>
+      <p>
+        No Grupo Brito, valorizamos talento, diversidade e crescimento profissional. Se você busca desafios e deseja contribuir para projetos inovadores, conheça nossas vagas e envie seu currículo.
+      </p>
+      <form>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+
+        <label for="curriculo">Mensagem / Vaga de interesse</label>
+        <textarea id="curriculo" name="curriculo" rows="4" placeholder="Fale um pouco sobre você ou a vaga desejada"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Tem dúvidas, sugestões ou deseja saber mais sobre nossas soluções? Entre em contato!</p>
+      <form>
+        <label for="nome-contato">Nome</label>
+        <input type="text" id="nome-contato" name="nome-contato" placeholder="Seu nome" required />
+
+        <label for="email-contato">E-mail</label>
+        <input type="email" id="email-contato" name="email-contato" placeholder="seu@email.com" required />
+
+        <label for="telefone-contato">Telefone</label>
+        <input type="tel" id="telefone-contato" name="telefone-contato" placeholder="(00) 00000-0000" />
+
+        <label for="mensagem-contato">Mensagem</label>
+        <textarea id="mensagem-contato" name="mensagem-contato" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Sedes regionais:</strong></p>
+        <p>São Paulo (SP) – Av. Exemplo, 123 – Tel: (11) 1234-5678</p>
+        <p>Rio de Janeiro (RJ) – Rua Exemplo, 456 – Tel: (21) 9876-5432</p>
+        <p>Brasília (DF) – Setor Exemplo, Quadra 12 – Tel: (61) 2345-6789</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Grupo Brito. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
